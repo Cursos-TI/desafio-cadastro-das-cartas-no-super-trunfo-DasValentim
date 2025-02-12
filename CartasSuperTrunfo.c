@@ -30,8 +30,8 @@ int main() {
     printf("Cidade: %s\n", cidade1);
     printf("Código: %s\n", cod1);
     printf("População: %d\n", pop1);
-    printf("Área: %f\n", area1);
-    printf("PIB: %f\n", pib1);
+    printf("Área: %.1f\n", area1);
+    printf("PIB: %.2f\n", pib1);
     printf("Pontos turisticos: %d\n", tur1);
 
     return 0;
