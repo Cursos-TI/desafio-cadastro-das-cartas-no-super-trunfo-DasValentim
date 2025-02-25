@@ -22,7 +22,7 @@ int main() {
     scanf(" %f", &pib1);
     printf("Escreva a quantidade de pontos turisticos da cidade:\n");
     scanf("%d", &tur1);
-    
+
     getchar();
     
 	printf("\nCARTA 2:\n");
@@ -38,7 +38,10 @@ int main() {
     scanf(" %f", &pib2);
     printf("Escreva a quantidade de pontos turisticos da cidade:\n");
     scanf("%d", &tur2);
-    
+
+    float dens1 = pop1/area1, dens2 = pop2/area2;
+    float pibcap1 = pib1/pop1, pibcap2 = pib2/pop2;
+
     printf("\nResultados:\n");
     
 	printf("1 CARTA:\n");
@@ -48,6 +51,8 @@ int main() {
     printf("Área: %.1f\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos turisticos: %d\n", tur1);
+    printf("Densidade Populacional: %.2f\n", dens1);
+    printf("PIB per Capita: %.2f\n", pibcap1);
     printf("\n");
     printf("2 CARTA:\n");
     printf("Cidade: %s", cidade2);
@@ -56,5 +61,7 @@ int main() {
     printf("Área: %.1f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turisticos: %d\n", tur2);
+    printf("Densidade Populacional: %.2f\n", dens2);
+    printf("PIB per Capita: %.2f\n", pibcap2);
     return 0;
 }
